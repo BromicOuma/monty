@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 
 	unsigned int line_num = 1;
-	int line_read, op_status = 0;
+	int line_read = 0, op_status = 0;
 	size_t line_len = 0;
 	char *buffer = NULL, *filename = NULL, *op_code = NULL, *op_param = NULL;
 	FILE *fd = NULL;
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 		++line_num;
 	}
 	frees_stack();
-	free(buff);
+	free(buffer);
 	fclose(fd);
 	return (0);
 }
