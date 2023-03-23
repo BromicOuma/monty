@@ -87,6 +87,7 @@ void push(stack_t **stack, unsigned int param);
 void pall(stack_t **stack, unsigned int line_number);
 void push_queue(stack_t **stack, unsigned int param);
 void pint(stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
 
 #endif /* end header defination */
 
